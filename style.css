@@ -1,0 +1,289 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            list-style: none;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: #1e1c2a;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            font-size: 18px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 170px;
+        }
+        
+        .logo {
+            color: orange;
+            font-weight: 600;
+            font-size: 2.4rem;
+        }
+        
+        .logo:hover {
+            color: darkorange;
+            background-color: steelblue;
+        }
+        
+        #menu-icon {
+            font-size: 2rem;
+            display: none;
+            cursor: pointer;
+        }
+        
+        .item {
+            display: flex;
+        }
+        
+        .item a {
+            font-weight: 500;
+            padding: 10px 20px;
+            font-size: 1.1em;
+        }
+        
+        .item li a:hover {
+            color: skyblue;
+            transition: .4s;
+        }
+        
+        section {
+            padding: 70px 17px;
+        }
+        
+        .home {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            min-height: 90vh;
+            width: 100%;
+            grid-gap: 1.5rem;
+            align-items: center;
+            /* background: url('foodd.jpg')no-repeat; */
+        }
+        
+        .home-img img {
+            max-width: 100%;
+            width: 600px;
+            height: auto;
+        }
+        
+        .hometext h1 {
+            font-size: 30px;
+            color: #000;
+            text-align: center;
+        }
+        
+        .hometext h1:hover {
+            /* font-size: 30px; */
+            color: violet;
+            /* text-align: center; */
+        }
+        
+        .hometext h2 {
+            margin: 1rem 0 2rem;
+            font-size: 40px;
+            color: #000;
+            text-align: center;
+        }
+        
+        .hometext h2:hover {
+            /* font-size: 30px; */
+            color: green;
+            text-align: center;
+        }
+        
+        .today-menu {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 50px;
+            background-color: orange;
+            color: #fff;
+            border-radius: 0.5rem;
+            /* align-items: center; */
+        }
+        
+        .today-menu:hover {
+            transform: scale(1.2) translateY(10px);
+            /* color: indianred; */
+            width: 40%;
+            transition: 0.4s;
+        }
+        
+        .about {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            align-items: center;
+            grid-gap: 1.5rem;
+        }
+        
+        .about-img img {
+            max-width: 100%;
+            height: auto;
+            width: 480px;
+        }
+        
+        .hometext1 h6 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+            color: green;
+        }
+        
+        .hometext1 h2 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+            color: orange;
+        }
+        
+        .hometext1 p {
+            margin: 0.8rem 0 1.8rem;
+            color: skyblue;
+            text-align: center;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        
+        .today {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 50px;
+            background-color: rebeccapurple;
+            color: white;
+            border-radius: 2.5rem;
+            align-items: center;
+        }
+        
+        .today:hover {
+            color: indianred;
+            width: 40%;
+        }
+        
+        .heading {
+            text-align: center;
+        }
+        
+        .heading h2 {
+            font-size: 30px;
+            color: red;
+        }
+        
+        .heading h6 {
+            font-size: 50px;
+            color: orange;
+        }
+        
+        .heading h6:hover {
+            color: teal;
+        }
+        
+        .heading h2:hover {
+            color: cornflowerblue;
+        }
+        
+        .heading1 h6 {
+            font-size: 50px;
+            color: orchid;
+            margin-left: 10px;
+            text-align: center;
+        }
+        
+        .heading1 h6:hover {
+            font-size: 50px;
+            color: skyblue;
+        }
+        
+        .heading1 h2 {
+            font-size: 30px;
+            color: red;
+            text-align: center;
+            margin-left: 10px;
+        }
+        
+        .heading1 h2:hover {
+            font-size: 30px;
+            color: green;
+        }
+        
+        .box {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: auto;
+            margin-top: 4rem;
+            /* background-color: skyblue; */
+            padding: 20px;
+            border-radius: 1rem;
+            flex-direction: column;
+            border: 0.5rem;
+        }
+        
+        .box-img {
+            width: 220px;
+            height: 220px;
+        }
+        
+        .box-img img {
+            width: 130%;
+            height: 100%;
+            /* border-radius: 190px; */
+        }
+        
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+            grid-gap: 1.5rem;
+            align-items: center;
+        }
+        
+        .box h3 {
+            color: coral;
+            font-size: 1.4rem;
+            margin: 17px;
+        }
+        
+        .box span {
+            color: red;
+            font-weight: 600;
+            font-size: 40px;
+        }
+        
+        .box h4 {
+            color: darkblue;
+            margin: 5px 0 14px;
+            font-weight: 400;
+            font-size: 1.4rem;
+        }
+        
+        .box i {
+            color: orangered;
+            font-weight: 600;
+            font-size: 40px;
+        }
+        
+        .pincode,
+        .address {
+            /* color: aqua; */
+            font-size: 1.2rem;
+            padding-top: 10px;
+        }
+        
+        .nationaliy,
+        .gender,
+        .form,
+        .hobbies {
+            color: orange;
+            font-size: 1.2rem;
+            padding-top: 10px;
+        }
